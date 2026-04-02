@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Heartt</title>
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- custom css and js file link  -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- header section starts -->
+
+    <header>
+      <input type="checkbox" name="" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
+
+      <a href="#" class="logo">Sweet Heartt<span>.</span></a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart" onclick="toggleCart(); return false;"></a>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Sweet Heartt Bakery</h3>
+        <span>very suitable for your mood</span>
+        <p>
+          Hey, welcome to Sweetheartttt, playground-nya bread lovers dan mood
+          chasers! Di sini, kamu bebas pilih menu sesuai vibe kamu. Di
+          Sweetheartttt, roti itu lebih dari sekadar snack, dia adalah friend,
+          comfort, dan joy dalam satu paket manis. Karena di sini, setiap bite
+          itu mini celebration, setiap aroma dari oven itu kayak whisper saying
+          "treat yourself, babe", dan setiap menu bisa dipilih sesuai mood kamu.
+          Jadi, ambil satu slice of happiness, dan biarkan Sweetheartttt jadi
+          mood booster paling manis di hari kamu!!
+        </p>
+        <a href="#products" class="btn">shop now</a>
+      </div>
+      
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+
+    <section class="about" id="about">
+      <h1 class="heading"><span> about </span> us</h1>
+
+      <div class="row">
+        <div class="video-container">
+          <video src="pict/videorotiI.mp4" loop autoplay muted></video>
+          <h3>best cake sellers</h3>
+        </div>
+
+        <div class="content">
+          <h3>why choose us?</h3>
+          <p>
+            Roti kami dibuat buat kamu yang lagi capek, lagi happy, lagi gabut,
+            atau lagi pengen diem sambil ngemil. Dengan tekstur yang super soft,
+            aroma yang warm, dan rasa yang comforting, setiap gigitan rasanya
+            kayak pelukan kecil—simple tapi ngena. Kami percaya, Bread Should Feel Like Home. Makannya, setiap adonan dibuat fresh, diproses dengan penuh perhatian dan dipanggang di waktu yang pas.
+          </p>
+          <p>
+            Produk kami juga dibuat bisa untuk menyesuaikan mood lohh. seperti strawberry dream untuk mood happy, jika stres ada choco lava cure, matcha chill untuk membantu fokus, jika merasa gabut ada caramel chruncy, kalau lagi galau ada dark choco melt, bahkan kalau lagi bucin ada red velvet lovebite lohh !!
+          <p>Gimana? masih ragu? Ayo Pesan Sekarang Juga !!!</p>
+          </p>
+          <a href="#products" class="btn">Find ur Mood !!</a>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- icons section starts -->
+
+    <section class="icons-container">
+      <div class="icons">
+        <img src="pict/iconroti.png" alt="" />
+        <div class="info">
+          <h3>Fresh Baked Bread</h3>
+          <span> Roti fresh, lembut, bikin nagih </span>
+        </div>
+      </div>
+
+      <div class="icons">
+        <img src="pict/iconpromo.png" alt="" />
+        <div class="info">
+          <h3>Sweet Deals</h3>
+          <span>Promo lucu, bikin checkout nggak mikir</span>
+        </div>
+      </div>
+
+      <div class="icons">
+        <img src="pict/iconcashback.png" alt="" />
+        <div class="info">
+          <h3>Extra Cashback</h3>
+          <span>jika tidak sesuai, bisa cashback loh !!</span>
+        </div>
+      </div>
+
+      <div class="icons">
+        <img src="pict/iconbeli.png" alt="" />
+        <div class="info">
+          <h3>Buy Now, Eat Happy</h3>
+          <span>Jangan nunggu laper, nanti jadi badmood !!</span>
+        </div>
+      </div>
+    </section>
+    <!-- icons section ends -->
+
+    <!-- products section starts -->
+
+    <section class="products" id="products">
+      <h1 class="heading">Bread <span> Crush💘 </span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <span class="discount">-7%</span>
+
+          <div class="images">
+            <img src="pict/carameltp.png" alt="" />
+
+            <div class="icons">
+              <a href="#" class="fas fa-heart" onclick="likeProduct(this); return false;"></a>
+              <a href="#" class="cart-btn" onclick="addToCart('Caramel Chrunchy', 25000, 'pict/carameltp.png'); return false;">add to cart</a>
+              <a href="#" class="fas fa-share" onclick="shareProduct('Caramel Chrunchy')"></a>
+            </div>
+          </div>
+
+          <div class="content">
+            <h3>Caramel Chrunchy</h3>
+            <div class="price">Rp 25.000 <span>Rp 27.000</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <span class="discount">-6%</span>
+          <div class="images">
+            <img src="pict/matchatp.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart" onclick="likeProduct(this); return false;"></a>
+              <a href="#" class="cart-btn" onclick="addToCart('Matcha', 23500, 'pict/matchatp.png'); return false;">add to cart</a>
+              <a href="#" class="fas fa-share" onclick="shareProduct('Matcha Chill')"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Matcha Chill</h3>
+            <div class="price">Rp 23.500 <span>Rp 25.000</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="images">
+            <img src="pict/strawberrytp.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart" onclick="likeProduct(this); return false;"></a>
+              <a href="#" class="cart-btn" onclick="addToCart('Strawberry Dream', 25500, 'pict/strawberrytp.png'); return false;">add to cart</a>
+              <a href="#" class="fas fa-share" onclick="shareProduct('Strawberry Dream')"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Strawberry Dream</h3>
+            <div class="price">Rp 25.500 <span> Rp 28.000</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <span class="discount">-13%</span>
+          <div class="images">
+            <img src="pict/redvelvettp.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart" onclick="likeProduct(this); return false;"></a>
+              <a herf="#" class="cart-btn" onclick="addToCart('Red Velvet Lovebite', 30000, 'pict/redvelvettp.png'); return false;">add to cart</a>
+              <a href="#" class="fas fa-share" onclick="shareProduct('red Velvet Lovebite')"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Red Velvet Lovebite</h3>
+            <div class="price">Rp 30.000 <span>Rp 35.000</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <span class="discount">-8%</span>
+          <div class="images">
+            <img src="pict/chocolavatp.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart" onclick="likeProduct(this); return false;"></a>
+              <a href="#" class="cart-btn" onclick="addToCart('Choco Lava cure', 23000, 'pict/chocolavatp.png'); return false;">add to cart</a>
+              <a href="#" class="fas fa-share" onclick="shareProduct('Choco lava cure')"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Choco lava cure</h3>
+            <div class="price">Rp 23.000 <span>Rp 25.000</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <span class="discount">-10%</span>
+          <div class="images">
+            <img src="pict/darkchocotp.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-heart" onclick="likeProduct(this); return false;"></a>
+              <a href="#" class="cart-btn" onclick="addToCart('Dark Choco Melt', 25000, 'pict/darkchocotp.png'); return false;">add to cart</a>
+              <a href="#" class="fas fa-share" onclick="shareProduct('Dark Choco Melt')"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Dark Choco Melt</h3>
+            <div class="price">Rp 25.000 <span>Rp 28.000</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products section ends -->
+
+    <!-- review section starts -->
+
+    <section class="review" id="review">
+      <h1 class="heading">customer's <span>review</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            Gua suka banget sama roti ini, it's simple but so satisfying.
+            Lembut, pas manisnya, cocok banget buat chill time. Worth every
+            bite!
+          </p>
+          <div class="user">
+            <img src="pict/jaehyun.jpg" alt="" />
+            <div class="user-info">
+              <h3>Jaehyun</h3>
+              <span> happy customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            This bread is legit so soft, gue bisa makan terus tanpa berhenti.
+            Gak salah deh gue nyobain ini!
+          </p>
+          <div class="user">
+            <img src="pict/mingyu.jpg" alt="" />
+            <div class="user-info">
+              <h3>Mingyu</h3>
+              <span> happy customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            I love how soft and fluffy this bread is, manisnya subtle tapi bikin
+            nagih. Perfect for a relaxing snack moment. Totally recommended!
+          </p>
+          <div class="user">
+            <img src="pict/rosee.jpg" alt="" />
+            <div class="user-info">
+              <h3>Rose</h3>
+              <span> happy customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            This bread actually made my day! Rasanya lembut dan manisnya subtle
+            banget, nggak bikin eneg sama sekali. Setiap gigitan bikin mood
+            langsung naik. I like how it's simple tapi berasa special. Gak heran
+            aku langsung pengen repeat order
+          </p>
+          <div class="user">
+            <img src="pict/gissele.jpg" alt="" />
+            <div class="user-info">
+              <h3>Gissele</h3>
+              <span> happy customer</span>
+            </div>
+          </div>
+          <span class="fas fa-quote-right"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span> contact </span> us</h1>
+
+      <div class="row">
+        <form action="">
+          <input type="text" placeholder="name" class="box" />
+          <input type="location" placeholder="location" class="box" />
+          <input type="number phone" placeholder="number phone" class="box" />
+          <textarea
+            name=""
+            class="box"
+            placeholder="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <a href="https://wa.me/6285848939275" target="_blank" class="btn">
+  Send Message 💌
+</a>
+        </form>
+
+        <div class="image">
+          <img src="pict/sweet.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#products">products</a>
+          <a href="#review">review</a>
+          <a href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>Customer Care</h3>
+          <a href="help.html#order">cara order</a>
+          <a href="help.html#payment">pembayaran</a>
+          <a href="help.html#shipping">pengiriman</a>
+          <a href="help.html#refund">refund & return</a>
+          <a href="help.html#faq">FAQ</a>
+        </div>
+
+        <div class="box">
+          <h3>Locations</h3>
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps?q=Transmart%20Pekalongan&output=embed"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <div class="box contact-info">
+          <h3>contact info</h3>
+          <a href="https://wa.me/6285848939275" target="_blank" class="contact-link">
+          <i class="fab fa-whatsapp"></i>
+          <span>+62 858-4893-9275</span>
+        </a>
+          <a href="https://instagram.com/Sweetheart_bakery" target="_blank" class="contact-link">
+          <i class="fab fa-instagram"></i>
+          <span>@Sweetheart_bakery</span>
+        </a>
+          <a href="https://twitter.com/Sweetheart_bakery" target="_blank" class="contact-link">
+          <i class="fab fa-x-twitter"></i>
+          <span>@Sweetheart_bakery</span>
+        </a>
+          <a href="https://www.tiktok.com/@Sweetheart_bakery" target="_blank" class="contact-link">
+          <i class="fab fa-tiktok"></i>
+          <span>@Sweetheart_bakery</span>
+        </a>
+
+      </div>
+
+    <!-- footer section ends -->
+
+     <!-- cart popup starts-->
+      <div class="cart-popup" id="cartPopup">
+        <h3>My Cart 🛒</h3>
+      <div id="cartItems"></div>
+
+      <div class="cart-footer">
+        <strong id="totalPrice">Total: Rp 0</strong>
+        <a id="checkoutWA" target="_blank" class="btn">Checkout via WhatsApp</a>
+      </div>
+    </div>
+     <!-- cart popup ends-->
+
+  </div>
+</div>
+
+<!-- popup love starts -->
+ <div id="lovePopup" class="popup-love">
+  <div class="love-box">
+    ❤️ Makasih udah nge-love! 💗
+  </div>
+</div>
+<!-- popup love ends -->
+  </body>
+</html>
